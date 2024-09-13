@@ -1,0 +1,79 @@
+[
+  {
+    "description": "    Como usuario nuevo,\n    Quiero completar un formulario de registro en la tienda,\n    Para crear una cuenta y acceder a las funcionalidades de compra y servicios adicionales como el newsletter.",
+    "keyword": "Feature",
+    "name": "CREACIÓN DE CUENTA",
+    "line": 1,
+    "id": "creación-de-cuenta",
+    "tags": [],
+    "uri": "luma_account_create.feature",
+    "elements": [
+      {
+        "id": "creación-de-cuenta;creación-exitosa-de-cuenta-de-usuario",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Creación exitosa de cuenta de usuario",
+        "tags": [
+          {
+            "name": "@CreacionCuentaExitosa",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que el usuario se dirige a la página customer account create",
+            "result": {
+              "status": "passed",
+              "duration": 22964000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "first_name",
+                      "last_name",
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Juan",
+                      "Pérez",
+                      "juan.perezTIII@example.com",
+                      "contraseña123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 9,
+            "name": "el usuario diligencia el formulario con los campos obligatorios",
+            "result": {
+              "status": "passed",
+              "duration": 16539000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "la cuenta debe ser creada exitosamente y mostrar el siguiente mensaje \"Thank you for registering with Main Website Store.\"",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
